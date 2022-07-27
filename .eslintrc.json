@@ -19,13 +19,12 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
+  "ignorePatterns": ["babel.config.js"],
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": ["off"],
-    // gives warning if spread props getting passed to component ex. (...props)
     "react/jsx-props-no-spreading": ["warn"],
-    // suppress errors for Function component is not a function declaration turning off allows us to use arrow functions
-    "react/function-component-definition": ["off"]
+    "react/function-component-definition": ["off"],
+    "@typescript-eslint/no-unused-vars": ["warn"]
   }
 }

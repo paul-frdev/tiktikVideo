@@ -14,10 +14,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@sanity/client": "^3.3.2",
     "axios": "^0.27.2",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-google-login": "^5.2.2",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {

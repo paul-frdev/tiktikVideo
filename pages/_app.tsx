@@ -1,15 +1,15 @@
 import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
+import { Sidebar } from "../components/Sidebar";
 
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  const [isSSR, setISSR] = useState(true);
+  const [isSSR, setIsSSR] = useState(true);
 
   useEffect(() => {
-    setISSR(false);
+    setIsSSR(false);
   }, []);
 
   if (isSSR) return null;

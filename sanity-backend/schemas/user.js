@@ -11,10 +11,7 @@ export default {
     {
       name: "Image",
       title: "Image",
-      type: "file",
-      options: {
-        hotspot: true,
-      },
+      type: "string",
     },
   ],
 };
